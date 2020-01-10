@@ -8,7 +8,7 @@ del bin\Release\*.nupkg
 dotnet pack -c Release
 
 :: upload the nuget packages
-:: .nuget\nuget push *.nupkg -Source "https://nuget.org"
+.nuget\nuget push *.nupkg -Source "https://nuget.org"
 
 :: remove nupkg files after uploading them
 del bin\Release\*.nupkg
